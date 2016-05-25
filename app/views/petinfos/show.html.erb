@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pet weight:</strong>
+  <%= @petinfo.pet_weight %>
+</p>
+
+<p>
+  <strong>Food weight:</strong>
+  <%= @petinfo.food_weight %>
+</p>
+
+<p>
+  <strong>Water volume:</strong>
+  <%= @petinfo.water_volume %>
+</p>
+
+<%= link_to 'Edit', edit_petinfo_path(@petinfo) %> |
+<%= link_to 'Back', petinfos_path %>

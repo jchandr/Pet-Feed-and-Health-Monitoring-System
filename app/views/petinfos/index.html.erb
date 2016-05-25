@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Petinfos</h1>
+
+<style type="text/css">
+  table{
+  margin: 10px;
+  border-collapse: collapse;
+  width: 50%;
+  border-bottom: 2px solid black;
+}
+table th{
+  border: 2px solid white;
+  font-weight: bold;
+  background-color: wheat;
+}
+table th, table td {
+  padding: 4px;
+  text-align: left;
+}
+#notice #warning {
+  background: rosybrown;
+  margin: 1em 0;
+  padding: 4px;
+}
+form label {
+  display: block;
+  line-height: 25px;
+  font-weight: bold;
+  color: maroon;
+}
+</style>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Timestamp</th>
+      <th>Pet weight</th>
+      <th>Food weight</th>
+      <th>Water volume</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @petinfos.each do |petinfo| %>
+      <tr>
+        <td><%= petinfo.id %></td>
+        <td><%= petinfo.updated_at %></td>
+        <td><%= petinfo.pet_weight %></td>
+        <td><%= petinfo.food_weight %></td>
+        <td><%= petinfo.water_volume %></td>
+        <td><%= link_to 'Edit', edit_petinfo_path(petinfo) %></td>
+        <td><%= link_to 'Delete', petinfo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Petinfo', new_petinfo_path %>
+<%= link_to "Logout", users_path %>

@@ -1,0 +1,25 @@
+<style type="text/css">
+    html { height: 100% }
+    body { height: 100%; margin: 0; padding: 0 }
+</style>
+    
+<p id="notice"><%= notice %></p>
+<h1>My Account</h1>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<%= link_to 'Edit Profile', edit_user_path(@user) %>
+<br><br>
+<%= link_to 'History', petinfos_path %>
+<br><br>
+<%= link_to 'Logout', users_path %>
+<br><br>
+

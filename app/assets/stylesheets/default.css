@@ -1,0 +1,67 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: LightGrey;
+  color: Black;
+  font-family: Tahoma, Verdana, sans-serif;
+  font-size: 10pt;
+}
+div#main {
+  margin: 0;
+  padding: 0 20px 20px;
+}
+a {
+  background: transparent;
+  color: maroon;
+  text-decoration: underline;
+  font-weight: bold;
+}
+h1 {
+  color: maroon;
+  font-size: 150%;
+  font-style: italic;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid DarkSlateGrey;
+}
+.title {
+  margin: 0 0 0em;
+  padding: 10px;
+  background-color: orange;
+  color: black;
+  border-bottom: 4px solid black;
+  font-size: 2em;
+  font-style: normal;
+  text-align: center;
+}
+
+
+table#petinfos {
+  margin: 10px;
+  border-collapse: collapse;
+  width: 100%;
+  border-bottom: 2px solid black;
+}
+table#petinfos th {
+  border: 2px solid white;
+  font-weight: bold;
+  background-color: wheat;
+}
+table#petinfos th, table#petinfos td {
+  padding: 4px;
+  text-align: left;
+}
+#notice #warning {
+  background: rosybrown;
+  margin: 1em 0;
+  padding: 4px;
+}
+table#petinfos th.hilite {
+  background-color: yellow;
+}
+form label {
+  display: block;
+  line-height: 25px;
+  font-weight: bold;
+  color: maroon;
+}

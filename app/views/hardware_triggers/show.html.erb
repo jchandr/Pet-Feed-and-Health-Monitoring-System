@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pet weight:</strong>
+  <%= @hardware_trigger.pet_weight %>
+</p>
+
+<p>
+  <strong>Food weight:</strong>
+  <%= @hardware_trigger.food_weight %>
+</p>
+
+<p>
+  <strong>Water volume:</strong>
+  <%= @hardware_trigger.water_volume %>
+</p>
+
+<%= link_to 'Edit', edit_hardware_trigger_path(@hardware_trigger) %> |
+<%= link_to 'Back', hardware_triggers_path %>

@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Hardware Triggers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pet weight</th>
+      <th>Food weight</th>
+      <th>Water volume</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @hardware_triggers.each do |hardware_trigger| %>
+      <tr>
+        <td><%= hardware_trigger.pet_weight %></td>
+        <td><%= hardware_trigger.food_weight %></td>
+        <td><%= hardware_trigger.water_volume %></td>
+        <td><%= link_to 'Show', hardware_trigger %></td>
+        <td><%= link_to 'Edit', edit_hardware_trigger_path(hardware_trigger) %></td>
+        <td><%= link_to 'Destroy', hardware_trigger, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Hardware trigger', new_hardware_trigger_path %>
