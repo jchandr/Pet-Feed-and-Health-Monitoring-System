@@ -1,5 +1,5 @@
 gem install bundler
-bundle install --without production
+bundle install
 cd bin
 rake db:migrate
 cd ..
